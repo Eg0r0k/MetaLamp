@@ -1,0 +1,37 @@
+$white: white;
+$darkShade-100: rgba(31, 32, 65, 1);
+$darkShade-70: rgba(31, 32, 65, 0.75);
+$darkShade-50: rgba(31, 32, 65, 0.5);
+$darkShade-25: rgba(31, 32, 65, 0.25);
+$darkShade-5: rgba(31, 32, 65, 0.05);
+
+$primary-purple: rgba(188, 156, 255, 1);
+$secondary-green: rgba(111, 207, 151, 1);
+$primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$secondary-gradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
+$stroke: rgba(31, 32, 65, 0.25);
+$mainFont: "Montserrat";
+$mainTextSize: 14px;
+$cardBoxShadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+$borderRadius: 4px;
+
+$animation:0.2s ease-in-out;
+
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    height: 100%;
+    font-family: $mainFont;
+    color: $darkShade-50;
+}
+html {
+    height: 100%;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    color: $darkShade-100;
+}

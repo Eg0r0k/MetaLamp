@@ -1,0 +1,33 @@
+{
+  "name": "metalamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.10.3",
+    "@parcel/transformer-sass": "^2.10.3",
+    "buffer": "^6.0.3",
+    "htmlnano": "^2.1.0",
+    "parcel": "^2.10.3",
+    "path-browserify": "^1.0.1",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.4",
+    "posthtml-modules": "^0.9.1",
+    "process": "^0.11.10",
+    "sass": "^1.69.5",
+    "vm-browserify": "^1.1.2"
+  },
+  "dependencies": {
+    "air-datepicker": "^3.4.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-img-autosize": "^0.1.6",
+    "swiper": "^11.0.5"
+  }
+}

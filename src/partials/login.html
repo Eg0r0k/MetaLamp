@@ -1,0 +1,18 @@
+
+    <div class="card">
+        <h1>{{ text }}</h1>
+        <div class="card__form">
+          <form action="">
+            <include src="./src/partials/wigets/input.html"  locals='{"placeholder": "Email", "type": "text"}' ></include>
+            <include src="./src/partials/wigets/input.html"  locals='{"placeholder": "Пароль", "type": "password"}' ></include>
+            <button type="submit" class="btn__regular btn__wide card__btn">
+              <span>войти</span><i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+  
+        <div class="card__footer">
+          <span> Нет аккаунта на Toxin?</span>
+          <button class="btn__outline">создать</button>
+        </div>
+      </div>

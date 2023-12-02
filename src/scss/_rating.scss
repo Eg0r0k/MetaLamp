@@ -1,0 +1,10 @@
+.rating {
+    display: inline-block;
+    i {
+        background-image: $primary-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+}

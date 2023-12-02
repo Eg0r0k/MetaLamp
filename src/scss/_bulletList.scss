@@ -1,0 +1,20 @@
+.bulletList {
+    &__bullet {
+        position: relative;
+        margin-bottom: 19px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 3px;
+
+            aspect-ratio: 1/1;
+            width: 10px;
+            background-color: $darkShade-25;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        margin-left: 20px;
+    }
+}

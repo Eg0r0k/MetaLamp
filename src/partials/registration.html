@@ -1,0 +1,54 @@
+<div class="card">
+  <h1>{{ text }}</h1>
+  <div class="card__form">
+    <form action="">
+      <include
+        src="./src/partials/wigets/input.html"
+        locals='{"placeholder": "Имя", "type": "text"}'
+      ></include>
+      <include
+        src="./src/partials/wigets/input.html"
+        locals='{"placeholder": "Фамилия", "type": "text"}'
+      ></include>
+      <div class="card__radio">
+        <include
+          src="./src/partials/wigets/radio.html"
+          locals='{"text":"Мужчина","name":"sexType"}'
+        ></include>
+        <include
+          src="./src/partials/wigets/radio.html"
+          locals='{"text":"Женщина","name":"sexType"}'
+        ></include>
+      </div>
+      <label for="inputBithDate" class="input__label">дата рождения</label>
+      <input
+        type="text"
+        id="inputBithDate"
+        autocomplete="off"
+        placeholder="ДД.ММ.ГГГГ"
+      />
+      <label for="login" class="input__label">данные для входа в сервис</label>
+      <include
+        src="./src/partials/wigets/input.html"
+        locals='{"placeholder": "Email", "type": "text"}'
+      ></include>
+      <include
+        src="./src/partials/wigets/input.html"
+        locals='{"placeholder": "Пароль", "type": "password"}'
+      ></include>
+      <include
+        src="./src/partials/wigets/toggle.html"
+        locals='{"text":"Получать спецпредложения"}'
+      ></include>
+      <button class="btn__regular btn__wide">
+        <span>перейти к оплате</span
+        ><i class="fa-sharp fa-solid fa-arrow-right"></i>
+      </button>
+    </form>
+
+    <div class="card__footer">
+      <span> Нет аккаунта на Toxin?</span>
+      <button class="btn__outline">создать</button>
+    </div>
+  </div>
+</div>

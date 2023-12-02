@@ -1,0 +1,67 @@
+@import "./resets";
+// ==================================================
+@import "./normalazis";
+// ==================================================
+@import "./shared";
+// ==================================================
+@import "./mixins";
+// ==================================================
+@import "./input";
+// ==================================================
+@import "./btn";
+// ==================================================
+@import "./bulletList";
+// ==================================================
+@import "./rating";
+// ==================================================
+@import "./toggle";
+// ==================================================
+@import "./checkbox";
+// ==================================================
+@import "./card";
+// ==================================================
+@import "./radio";
+// ==================================================
+@import "./calendar";
+
+.dropdown {
+    position: relative;
+    &:hover{
+        i 
+        {
+            rotate: 180deg;
+            transition: $animation;
+            
+        }
+        
+    }
+    &:not(:hover)
+    {
+        i 
+        {
+            transition: $animation;
+        }
+    }
+    width: 100%;
+    & input {
+        width: calc(100% - 50px);
+    }
+    & button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        right: 19px;
+        top: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        transform: translateY(-50%);
+        & i {
+        }
+    }
+}
